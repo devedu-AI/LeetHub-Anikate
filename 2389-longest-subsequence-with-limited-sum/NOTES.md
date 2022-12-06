@@ -1,0 +1,1 @@
+prefix sum -> good q
