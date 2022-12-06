@@ -10,9 +10,20 @@ using namespace std;
 class Solution
 {
 public:
+    int max_elem(vector<int> &arr, int n)
+    {
+        int max=INT_MIN;
+        
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]>max) max=arr[i];
+        }
+        
+        return max;
+    }
     int largest(vector<int> &arr, int n)
     {
-        return *max_element(arr.begin(),arr.end());
+        return max_elem(arr,n);
     }
 };
 
